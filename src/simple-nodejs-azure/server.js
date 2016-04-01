@@ -8,7 +8,7 @@ http.createServer(function (req, res) {
     var posicionBarra = req.url.toString().indexOf('/', 1);
     var carpeta = req.url.toString().substring(1, posicionBarra);
 
-    console.log(carpeta);
+    console.log(carpeta); 
     
     if (carpeta.length > 3) {
         var app = require('./' + carpeta + '/app.js');
