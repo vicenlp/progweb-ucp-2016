@@ -5,8 +5,16 @@
         return "Jose A. Fernandez";
     }
 
-    self.items = function () {
-        return "Estoy desde mi App";
+    self.items = function (cantidad) {
+        
+        var miLista = '<ul>';
+        
+        for (i = 1; i <= cantidad; i++) {
+            miLista += '<li> J ' + i + '</li>';
+        }
+        
+        miLista += '</ul>';
+        return miLista;
     }
     
     return self;
