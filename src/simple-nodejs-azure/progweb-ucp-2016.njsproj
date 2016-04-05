@@ -5,7 +5,7 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <Name>progweb-ucp-2016</Name>
     <RootNamespace>simple-nodejs-azure</RootNamespace>
-    <LaunchUrl>/jose/demo.html</LaunchUrl>
+    <LaunchUrl>/enzo/demo.html</LaunchUrl>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -32,6 +32,7 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="enzo\app.js" />
     <Compile Include="jose\app.js" />
     <Compile Include="server.js" />
     <Content Include="Web.config" />
@@ -46,6 +47,7 @@
   <ItemGroup>
     <Folder Include="bin\" />
     <Folder Include="jose\" />
+    <Folder Include="enzo\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
