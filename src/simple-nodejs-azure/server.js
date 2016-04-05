@@ -19,8 +19,12 @@ http.createServer(function (req, res) {
         res.write('Carpeta: ' + carpeta);
         res.write('<br />');
         res.write('Nombre: ' + app.nombre());
+        res.write('<br />');
         res.write('</h1>');
+
+        res.write(app.lista());
         res.end(app.items());
+        
         
     } else {
         res.writeHead(404, { 'Content-Type': 'text/html' });
