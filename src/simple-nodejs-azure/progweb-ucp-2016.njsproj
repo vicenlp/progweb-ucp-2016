@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="cnchocron\app.js" />
+    <Compile Include="cristian\app.js" />
     <Compile Include="jose\app.js" />
     <Compile Include="server.js" />
     <Content Include="Web.config" />
@@ -46,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
+    <Folder Include="cristian\" />
     <Folder Include="jose\" />
     <Folder Include="cnchocron\" />
   </ItemGroup>

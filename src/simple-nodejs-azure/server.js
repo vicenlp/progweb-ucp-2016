@@ -31,7 +31,7 @@ http.createServer(function (req, res) {
         res.write('<br />');
         res.write('Nombre: ' + app.nombre());
         res.write('</h1>');
-        res.end(app.items(cantidadItems));
+        res.end(app.items());
         
     } else {
         res.writeHead(404, { 'Content-Type': 'text/html' });
