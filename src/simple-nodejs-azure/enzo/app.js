@@ -9,7 +9,7 @@
         var unaLista = '<ul>';
         var unForm = '<form action="/enzo/demo.html" method="get">';
         for (var i = 1; i <= cantidad; i++) {
-            unaLista = unaLista + '<li>Item' + i + ' </li>' + unForm + '<input type="submit" name="cantidad" value="' + i + '">';//+ ' <input type="header" name="" value="">';
+            unaLista = unaLista + '<li>Item' + i + ' </li>' + unForm + '<input type="submit" name="cantidad" value="' + i + '">';
         };
         unForm += '</form>';        
         unaLista += '</ul>';
