@@ -17,8 +17,6 @@
         return unaLista;
     }
     
-
-    
     return self;
 }();
 
