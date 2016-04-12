@@ -5,12 +5,19 @@
         return "Cristhian Chocron";
     }
 
-    self.items = function () {
+    self.items = function (cantidad) {
         
         var miLista = '<ul>';
 
-        for (i = 1; i < 51; i++) {            
-            miLista += '<li> Item ' + i + '</li>';
+        for (i = 1; i <= cantidad; i++) {
+            miLista += '<li> Item ' + 
+                        i + 
+                        '<form action="" method="get">'+
+                        '<input type="hidden" name="cantidad" value="' +
+                        i
+                        +'">' +
+                        '<input type="submit" value="Item' + i +'">'+
+                        '</form></li>';
         }
         
         miLista += '</ul>';
