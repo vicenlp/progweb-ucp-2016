@@ -1,0 +1,2 @@
+C:\Users\cncho\Source\Repos\progweb-ucp-2016\src\simple-nodejs-azure\obj\Debug\progweb-ucp-2016.njsprojResolveAssemblyReference.cache
+C:\Users\cncho\Source\Repos\progweb-ucp-2016\src\simple-nodejs-azure\bin\Microsoft.NodejsTools.WebRole.dll
