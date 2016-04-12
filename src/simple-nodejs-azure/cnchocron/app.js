@@ -5,11 +5,11 @@
         return "Cristhian Chocron";
     }
 
-    self.items = function () {
+    self.items = function (cantidad) {
         
         var miLista = '<ul>';
 
-        for (i = 1; i < 51; i++) {            
+        for (i = 1; i <= cantidad; i++) {            
             miLista += '<li> Item ' + i + '</li>';
         }
         
