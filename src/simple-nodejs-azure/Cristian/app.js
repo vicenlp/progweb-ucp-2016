@@ -9,7 +9,7 @@
         var lista = '<ul>'
         var form = '<form action="/cristian/demo.html" method="get" >'
         for (var i = 0; i < cantidad; i++) {
-            var item = '<li type="disc">Item ' + (i + 1) + '</li>' + form + '<input type="submit" name="numero" value="' + (i + 1) + '" >' + '<input type >;
+            var item = '<li type="disc">Item ' + (i + 1) + '</li>' + form + '<input type="submit" name="numero" value="' + (i + 1) + '" >' ;
             lista = lista + item;
         }
         form = form + '</form>';
