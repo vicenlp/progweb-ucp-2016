@@ -18,6 +18,24 @@
     }
     
     
+    self.opciones = function (cantidad) {
+        
+        var miLista = '<ul>';
+        miLista += '<form action="" method="get">';
+
+        for (i = 1; i <= cantidad; i++) {
+            miLista += '<li>';
+            miLista += '<input type="radio" name="cantidad" value="' + i + '" /> ';
+            miLista += 'Respuesta ' + i;
+            miLista += '</li>';
+        }
+        
+        miLista += '</form>';
+        miLista += '</ul>';
+
+        return miLista;
+    }
+    
     return self;
 }();
 

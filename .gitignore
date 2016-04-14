@@ -34,3 +34,6 @@ node_modules
 *.suo
 *.dat
 *.ntvs_analysis.dat
+*.dll
+*.cache
+/src/simple-nodejs-azure/obj/Debug/progweb-ucp-2016.njsproj.FileListAbsolute.txt
