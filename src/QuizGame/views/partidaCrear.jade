@@ -1,6 +1,14 @@
 ﻿extends layout
 
 block content
-  h1 Crear partida
+  h1 Nueva partida
 
-  
+  form(action='', method='post')
+        div
+        input(type='text', name='nombre', value='', placeholder='Nombre')
+        br
+        br
+        input(type='text', name='ubicacion', value='', placeholder='Ubicacion')
+        br
+        br
+        input(type='submit', value='Crear')
