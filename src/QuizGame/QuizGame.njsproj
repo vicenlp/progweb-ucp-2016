@@ -37,8 +37,10 @@
     <Compile Include="routes\users.js" />
     <Compile Include="bin\www" />
     <Content Include="package.json" />
+    <Content Include="public\imagenes\QuizGame-UCP-2016.png" />
     <Content Include="public\stylesheets\style.styl" />
     <Content Include="README.md" />
+    <Content Include="views\home.jade" />
     <Content Include="views\partidaCrear.jade" />
     <Content Include="views\partidaListado.jade" />
     <Content Include="views\pregunta.jade" />
@@ -49,6 +51,7 @@
   <ItemGroup>
     <Folder Include="bin\" />
     <Folder Include="public\" />
+    <Folder Include="public\imagenes\" />
     <Folder Include="public\images\" />
     <Folder Include="public\javascripts\" />
     <Folder Include="public\stylesheets\" />
