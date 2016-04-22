@@ -1,14 +1,17 @@
 ﻿extends layout
 
 block content
-  h1 #{descripcion} id #{id}
-  p pregunta #{descripcion} id #{id}
 
-  h2 ¿Cual es la respuesta?
+    div(class="row")
+        div(class="col-md-12")
+            h2 #{pregunta.descripcion} id #{pregunta.id}
+            
+        div(class="col-md-12")
+            each r in pregunta.respuestas
+                div(class="form-group")
+                    form(action="/partida/#{partida.id}/pregunta/#{pregunta.id}", method="get")                    
+                        input(class="btn btn-default btn-block #{r.css}", type="submit", name="respuesta", value="#{r.descripcion} ")
+                        input(class="btn btn-default", type="hidden", name="respuestaId", value="#{r.id}")
+
 
   
-  each r in respuestas
-    form(action="", method="get")
-        input(type="submit", name="respuesta", value="#{r.descripcion}")
-        input(type="hidden", name="respuestaId", value="#{r.id}")
-        input(type="hidden", name="preguntaId", value="#{id}")
