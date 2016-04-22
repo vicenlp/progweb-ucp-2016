@@ -64,6 +64,13 @@ router.get('/:partidaId/pregunta/:preguntaId', function (req, res) {
 });
 
 
+router.get('/:partidaId/', function (req, res) {
+    var partidaId = req.params.partidaId;
+    //IR a una pregunta alteatoria
+    res.redirect('/partida/'+ partidaId+'/pregunta/1');
+});
+
+
 
 router.get('/listado', function (req, res) {
     
