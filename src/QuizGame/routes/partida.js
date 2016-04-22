@@ -54,7 +54,9 @@ router.get('/:partidaId/pregunta/:preguntaId', function (req, res) {
     
     var preguntaVm = {
         partida: { id: partidaId },
-        pregunta: pregunta
+        pregunta: pregunta,
+        respuestaId: respuestaId,
+        tieneRespuesta: (respuestaId != undefined)
     };
     
     
