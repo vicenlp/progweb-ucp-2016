@@ -16,6 +16,7 @@ router.get('/listado', function (req, res) {
 
 router.get('/crear', function (req, res) {
     
+
     var partidaVm = {};
     
     

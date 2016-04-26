@@ -1,14 +1,30 @@
 ﻿extends layout
 
 block content
-  h1 Nueva partida
+  h1 Crear partida
 
-  form(action='', method='post')
-        div
-        input(type='text', name='nombre', value='', placeholder='Nombre')
+  script.
+          var x = document.getElementById("demo");
+          function getLocation() {
+          if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+          } else {
+          x.innerHTML = "Geolocation is not supported by this browser.";
+          }
+          }
+          function showPosition(position) {
+          x.innerHTML = "Latitude: " + position.coords.latitude +
+          "<br>Longitude: " + position.coords.longitude;
+          }
+          function showPosition(position) {
+          x.innerHTML = "Latitude: " + position.coords.latitude +
+          "<br>Longitude: " + position.coords.longitude;
+          }
+
+  form(action='/partida/crear', method='get')
+        .form-group
+        input#nombre.form-control(type='text', name='nombre', placeholder='Nombre')
         br
+        input#ubicacion.form-control(type='text', name='ubicacion', placeholder='Ubicacion')
         br
-        input(type='text', name='ubicacion', value='', placeholder='Ubicacion')
-        br
-        br
-        input(type='submit', value='Crear')
+        button.btn.btn-primary.btn-lg(type='button', onclick='getLocation()') Crear

@@ -1,2 +1,4 @@
 C:\Users\jose.fernandez\Documents\UCP\2016-ProgramacionWeb-UCP\Repositorios\progweb-ucp-2016\src\QuizGame\QuizGame\obj\Debug\QuizGame.njsprojResolveAssemblyReference.cache
 C:\Users\jose.fernandez\Documents\UCP\2016-ProgramacionWeb-UCP\Repositorios\progweb-ucp-2016\src\QuizGame\QuizGame\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\hp user\Source\Repos\progweb-ucp-2016\src\QuizGame\obj\Debug\QuizGame.njsprojResolveAssemblyReference.cache
+C:\Users\hp user\Source\Repos\progweb-ucp-2016\src\QuizGame\bin\Microsoft.NodejsTools.WebRole.dll
